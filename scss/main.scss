@@ -1,0 +1,66 @@
+.projects {
+    display: flex;
+    width: 100%;
+    &__block1 {
+        display: flex;
+        flex: 0 0 (100% / 3 * 2);
+        border: 1px solid #000;
+    }
+    &__title {
+        flex: 0 0 45%;
+        background-color: #ebb240;
+        @extend %diagonal-line;
+    }
+    &__fondue {
+    }
+    &__louis-xx {
+    }
+    &__395-396-p22 {
+    }
+    &__block2 {
+    }
+    &__potter {
+    }
+    &__tabano {
+    }
+    &__fiji {
+    }
+    &__block3 {
+    }
+    &__sesann {
+    }
+    &__alessi {
+    }
+    &__timeline {
+    }
+}
+.title {
+    position: relative;
+    color: #fff;
+    &__filter-block {
+        position: absolute;
+        top: 35%;
+        left: 30%;
+    }
+    &__filter {
+        display: block;
+    }
+    &__name {
+    }
+}
+.card {
+    &__title {
+    }
+    &__description {
+    }
+    &__link {
+    }
+    &__likes {
+    }
+    &__heart {
+    }
+    &__amount {
+    }
+}
+.bold {
+}
