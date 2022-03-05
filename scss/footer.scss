@@ -1,0 +1,33 @@
+.liquid__wrapper_map {
+    padding-bottom: 86%;
+}
+.footer {
+    display: flex;
+    &__map {
+        flex: 0 0 50%;
+        background-color: #fff;
+    }
+    &__info {
+        position: relative;
+        flex: 0 0 50%;
+    }
+    &__info-block {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    &__address {
+        margin-bottom: 15%;
+    }
+    &__logo {
+        position: absolute;
+        top: 20%;
+        right: 24%;
+    }
+    &__license {
+        position: absolute;
+        left: 20%;
+        bottom: 8%;
+        @extend %font-size-s;
+    }
+}

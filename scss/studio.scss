@@ -1,0 +1,104 @@
+.studio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 6%;
+    &__title {
+        flex: 0 0 31%;
+        background-color: #ff9b6d;
+    }
+    &__description {
+        flex: 0 0 48%;
+        text-transform: none;
+        @extend %font-size-m;
+    }
+    &__description p {
+        margin-bottom: 3%;
+    }
+    &__description p:nth-child(2) {
+        margin-bottom: 8%;
+    }
+    &__description p:not(.bold) {
+        font-weight: 300;
+    }
+    &__preview {
+        flex: 0 0 48%;
+    }
+    &__preview-photo {
+        margin-bottom: 10%;
+    }
+    &__designers {
+        display: flex;
+        flex: 0 0 100%;
+        justify-content: space-between;
+        padding: 4% 12% 0 12%;
+    }
+    &__designers-description {
+        flex: 0 0 22.5%;
+    }
+    &__designers-description h4 {
+        margin-bottom: 5%;
+    }
+    &__designers-description p {
+        margin-bottom: 5%;
+        text-transform: none;
+        font-weight: 300;
+    }
+    &__designer {
+        flex: 0 0 23%;
+    }
+}
+.awards {
+    &__title {
+        @extend %font-size-m;
+        margin-bottom: 5%;
+        padding: 2px;
+        border-bottom: 1px solid #bfc0b9;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items p {
+        flex: 0 0 35%;
+        @extend %font-size-s;
+    }
+}
+.designer {
+    border: 1px solid #000;
+    &__photo {
+        margin-bottom: 4%;
+    }
+    &__profession {
+        margin-bottom: 6%;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #000;
+    }
+    &__cv {
+        align-self: center;
+        color: #fd5000;
+        transition: 400ms;
+    }
+    &__cv:hover {
+        font-weight: bold;
+    }
+    &__cv::after {
+        display: inline-block;
+        content: "🡠";
+        margin-left: 10px;
+        transition: 400ms;
+    }
+    &__cv:hover::after {
+        transform: rotate(-360deg);
+    }
+    &__social {
+        display: flex;
+        flex: 0 0 35%;
+        justify-content: space-between;
+        border: 1px solid #000;
+    }
+    &_social-icon {
+    }
+}

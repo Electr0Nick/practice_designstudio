@@ -1,19 +1,75 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic);
 
-%diagonal-line {
-    background-image: linear-gradient(to bottom right, transparent 49.8%, #fff 50%, transparent 50.2%);
+%font-size-s {
+    font-size: 0.9rem;
+}
+%font-size-main {
+    font-size: 1rem;
+}
+%font-size-m {
+    font-size: 1.3rem;
+}
+%font-size-l {
+    font-size: 1.8rem;
+}
+%font-size-xl {
+    font-size: 2rem;
+}
+%font-size-xxl {
+    font-size: 3.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
 }
 
 body {
     font-family: "Roboto Condensed";
+    @extend %font-size-main;
+    font-weight: regular;
     text-transform: uppercase;
+    background-color: #e9eae2;
+}
+
+.logo-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 11vw;
+    height: 46vh;
+    &__text {
+        width: 10%;
+        @extend %font-size-m;
+    }
+    &__social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 12%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__soc-icon {
+        transition: 200ms;
+    }
+    &__soc-icon:hover {
+        opacity: 0;
+    }
 }
 
 .liquid {
     &__wrapper {
         position: relative;
         width: 100%;
-        padding-bottom: 100%;
+    }
+    &__wrapper_title {
+        padding-bottom: 107.5%;
     }
     &__container {
         position: absolute;
@@ -22,5 +78,26 @@ body {
     }
 }
 
+.title {
+    background-image: linear-gradient(to bottom right, transparent 49.8%, #fff 50%, transparent 50.2%);
+    &__name {
+        position: absolute;
+        bottom: 30%;
+        left: 45%;
+        @extend %font-size-xxl;
+        color: #fff;
+    }
+}
+
+.tablo {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 69%;
+    padding: 5% 12% 5% 8%;
+}
+
 @import "header.scss";
 @import "main.scss";
+@import "studio.scss";
+@import "news.scss";
+@import "footer.scss";

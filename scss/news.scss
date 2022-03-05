@@ -1,0 +1,32 @@
+.news {
+    display: flex;
+    &__title {
+        flex: 0 0 31%;
+        background-color: #d4edbf;
+    }
+}
+.block-news {
+    display: flex;
+    flex: 0 0 48%;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        flex: 0 0 16%;
+        @extend %font-size-l;
+    }
+    &__date {
+        color: #6a6969;
+    }
+    &__preview {
+        margin: 5% 0;
+    }
+    &__text {
+        flex: 0 0 18%;
+        color: #6a6969;
+        text-transform: none;
+    }
+    &__link {
+        align-self: flex-end;
+        color: #fd5000;
+    }
+}
