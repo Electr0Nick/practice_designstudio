@@ -75,7 +75,7 @@
         font-weight: bold;
     }
     .filter::before {
-        content: "🡢";
+        content: '🡢';
         margin-right: 10px;
         color: transparent;
     }
@@ -126,20 +126,31 @@
         display: flex;
         flex-direction: column;
         align-self: center;
-        width: 1.8vw;
-        height: 6vh;
+        width: 3vw;
+    }
+    .liquid__wrapper_likes {
+        padding-bottom: 100%;
     }
     &__heart {
         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 60%;
         transition: 200ms;
     }
-    &__heart:hover {
+    &__heart_active {
         opacity: 0;
+    }
+    &__heart_active:hover {
+        opacity: 1;
     }
     &__amount {
         position: absolute;
         bottom: 0;
-        align-self: center;
+        transform: translate(-50%);
+        left: 50%;
         color: #ff0000;
         @extend %font-size-s;
         font-weight: inherit;

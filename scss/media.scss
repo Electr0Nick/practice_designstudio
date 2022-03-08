@@ -1,0 +1,33 @@
+@media (min-width: 2400px) {
+    %font-size-main {
+        font-size: 22px;
+    }
+}
+@media (min-width: 3000px) {
+    %font-size-main {
+        font-size: 28px;
+    }
+}
+@media (min-width: 3700px) {
+    %font-size-main {
+        font-size: 34px;
+    }
+}
+@media (max-width: 1800px) {
+    %font-size-main {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1400px) {
+    %font-size-main {
+        font-size: 10px;
+    }
+}
+@media (max-width: 1200px) {
+    %font-size-main {
+        font-size: 8px;
+    }
+}
+@media (max-width: 850px) {
+
+}

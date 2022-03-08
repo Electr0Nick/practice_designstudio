@@ -24,6 +24,7 @@
         flex: 0 0 48%;
     }
     &__preview-photo {
+        width: 100%;
         margin-bottom: 10%;
     }
     &__designers {
@@ -64,8 +65,8 @@
     }
 }
 .designer {
-    border: 1px solid #000;
     &__photo {
+        width: 100%;
         margin-bottom: 4%;
     }
     &__profession {
@@ -74,7 +75,6 @@
     &__links {
         display: flex;
         justify-content: space-between;
-        border: 1px solid #000;
     }
     &__cv {
         align-self: center;
@@ -97,8 +97,12 @@
         display: flex;
         flex: 0 0 35%;
         justify-content: space-between;
-        border: 1px solid #000;
+        column-gap: 16%;
     }
-    &_social-icon {
+    &__social-icon {
+        transition: 200ms;
+    }
+    &__social-icon:hover {
+        transform: scale(1.2);
     }
 }

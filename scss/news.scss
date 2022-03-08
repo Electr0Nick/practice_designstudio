@@ -26,7 +26,23 @@
         text-transform: none;
     }
     &__link {
+        display: inline-block;
         align-self: flex-end;
+        width: 50%;
+        text-align: right;
+        color: #fd5000;
+        transition: 200ms;
+    }
+    &__link:hover {
+        font-weight: bold;
+    }
+    &__link::before {
+        content: '🡢';
+        margin-right: 4%;
+        color: transparent;
+        transition: 200ms;
+    }
+    &__link:hover::before {
         color: #fd5000;
     }
 }
