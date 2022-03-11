@@ -12,7 +12,7 @@
     justify-content: space-between;
     &__title {
         flex: 0 0 16%;
-        @extend %font-size-l;
+        font-size: 1.8rem;
     }
     &__date {
         color: #6a6969;

@@ -1,33 +1,186 @@
+//________________________________________________________>900px________________________________________________________
 @media (min-width: 2400px) {
-    %font-size-main {
+    html {
         font-size: 22px;
     }
 }
 @media (min-width: 3000px) {
-    %font-size-main {
+    html {
         font-size: 28px;
     }
 }
 @media (min-width: 3700px) {
-    %font-size-main {
+    html {
         font-size: 34px;
     }
 }
 @media (max-width: 1800px) {
-    %font-size-main {
+    html {
         font-size: 12px;
     }
 }
 @media (max-width: 1400px) {
-    %font-size-main {
+    html {
         font-size: 10px;
     }
 }
 @media (max-width: 1200px) {
-    %font-size-main {
+    html {
         font-size: 8px;
     }
 }
-@media (max-width: 850px) {
-
+//________________________________________________________<900px________________________________________________________
+@media (max-width: 900px) {
+    //________________________styles________________________
+    .liquid {
+        &__wrapper_title {
+            padding-bottom: 10%;
+        }
+    }
+    .title {
+        background-image: none;
+        flex: 0 0 100%;
+        &__name {
+            top: 50%;
+            bottom: auto;
+            right: 2%;
+            left: auto;
+            transform: translate(0, -50%);
+            font-size: 5rem;
+        }
+    }
+    .tablo {
+        flex: 0 0 100%;
+        padding: 5%;
+    }
+    //________________________header________________________
+    .header {
+        flex-direction: column-reverse;
+        &__right-col {
+            display: none;
+        }
+        // &__btn {
+        //     position: absolute;
+        //     left: 2%;
+        //     top: 50%;
+        //     width: 6%;
+        //     margin: 0;
+        //     transform: translate(0, -50%);
+        // }
+        // &__address {
+        //     top: 50%;
+        //     right: 15%;
+        //     left: auto;
+        //     transform: translate(0, -50%);
+        // }
+        // &__contacts {
+        //     top: 50%;
+        //     bottom: auto;
+        //     right: 2%;
+        //     left: auto;
+        //     transform: translate(0, -50%);
+        // }
+        &__left-col {
+            flex: 0 0 auto;
+            height: 400px;
+            background-position: 50% 50%;
+        }
+        &__logo {
+            margin: 7% 0 0 10%;
+        }
+    }
+    .burger-btn {
+        border-width: 2px;
+        &__line,
+        &::before,
+        &::after {
+            height: 2px;
+        }
+    }
+    //________________________main________________________
+    .projects {
+        flex-direction: column;
+        &__block2 {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item {
+            height: 300px;
+            background-position: 50% 50%;
+        }
+        .projects__item_title {
+            height: auto;
+        }
+        &__item_fondue {
+            flex: 0 0 65%;
+            order: 1;
+        }
+        &__item_louis-xx {
+            flex: 0 0 35%;
+            order: 2;
+        }
+        .liquid__wrapper_louis-xx {
+            padding-bottom: 300px;
+        }
+        &__item_alessi {
+            flex: 0 0 25%;
+            order: 3;
+        }
+        .liquid__wrapper_alessi {
+            padding-bottom: 300px;
+        }
+        &__item_395-396-p22 {
+            flex: 0 0 75%;
+            order: 4;
+        }
+        &__item_sesann {
+            flex: 0 0 100%;
+            order: 5;
+        }
+        &__item_potter {
+            flex: 0 0 60%;
+            order: 2;
+        }
+        &__item_tabano {
+            flex: 0 0 40%;
+            order: 1;
+        }
+        &__item_fiji {
+            flex: 0 0 75%;
+            order: 3;
+        }
+        &__item_timeline {
+            flex: 0 0 25%;
+            order: 4;
+            background-image: none;
+        }
+    }
+    .filter-block_title {
+        top: 50%;
+        left: 2%;
+        transform: translate(0, -50%);
+    }
+    .filter-block_timeline {
+        top: 15%;
+        left: 15%;
+    }
+    //________________________studio________________________
+    .studio {
+        &__designers {
+            flex-wrap: wrap;
+            padding: 0 5%;
+        }
+        &__designers-description {
+            flex: 0 0 31%;
+            margin: 0 735% 30px 0;
+        }
+        &__designer {
+            flex: 0 0 31%;
+        }
+    }
+    //________________________news________________________
+    .news {
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
 }

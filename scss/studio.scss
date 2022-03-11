@@ -9,7 +9,7 @@
     &__description {
         flex: 0 0 48%;
         text-transform: none;
-        @extend %font-size-m;
+        font-size: 1.3rem;
     }
     &__description p {
         margin-bottom: 3%;
@@ -50,7 +50,7 @@
 }
 .awards {
     &__title {
-        @extend %font-size-m;
+        font-size: 1.2rem;
         margin-bottom: 5%;
         padding: 2px;
         border-bottom: 1px solid #bfc0b9;
@@ -61,7 +61,7 @@
     }
     &__items p {
         flex: 0 0 35%;
-        @extend %font-size-s;
+        font-size: 0.9rem;
     }
 }
 .designer {
@@ -71,6 +71,7 @@
     }
     &__profession {
         margin-bottom: 6%;
+        font-size: 0.9rem;
     }
     &__links {
         display: flex;

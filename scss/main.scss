@@ -87,24 +87,28 @@
     top: 30%;
     left: 30%;
 }
+.filter-block_timeline {
+    top: 25%;
+    left: 25%;
+}
 .card {
     position: absolute;
     display: flex;
     font-weight: 300;
     &__title {
         padding-bottom: 18px;
-        @extend %font-size-xl;
+        font-size: 2rem;
         font-weight: inherit;
     }
     &__description {
-        @extend %font-size-s;
+        font-size: 0.9rem;
         font-weight: inherit;
     }
     &__text {
         text-transform: none;
     }
     &__link {
-        @extend %font-size-m;
+        font-size: 1.3rem;
         font-weight: inherit;
         transition: 400ms;
     }
@@ -152,7 +156,7 @@
         transform: translate(-50%);
         left: 50%;
         color: #ff0000;
-        @extend %font-size-s;
+        font-size: 0.9rem;
         font-weight: inherit;
     }
 }
@@ -254,12 +258,8 @@
 }
 .timeline {
     &__name {
-        margin: 0 0 6px 24px;
+        margin: 0 0 6px 16px;
         color: #000;
         font-weight: bold;
     }
-}
-.filter-block_timeline {
-    top: 25%;
-    left: 25%;
 }
