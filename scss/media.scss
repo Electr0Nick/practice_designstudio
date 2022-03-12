@@ -32,6 +32,9 @@
 //________________________________________________________<900px________________________________________________________
 @media (max-width: 900px) {
     //________________________styles________________________
+    html {
+        font-size: 10px;
+    }
     .liquid {
         &__wrapper_title {
             padding-bottom: 10%;
@@ -55,7 +58,7 @@
     }
     //________________________header________________________
     .header {
-        flex-direction: column-reverse;
+ 
         &__right-col {
             display: none;
         }
@@ -81,7 +84,7 @@
         //     transform: translate(0, -50%);
         // }
         &__left-col {
-            flex: 0 0 auto;
+            flex: 0 0 100%;
             height: 400px;
             background-position: 50% 50%;
         }
@@ -112,38 +115,38 @@
             height: auto;
         }
         &__item_fondue {
-            flex: 0 0 65%;
+            flex: 0 0 60%;
             order: 1;
         }
         &__item_louis-xx {
-            flex: 0 0 35%;
+            flex: 0 0 40%;
             order: 2;
         }
         .liquid__wrapper_louis-xx {
             padding-bottom: 300px;
         }
         &__item_alessi {
-            flex: 0 0 25%;
+            flex: 0 0 30%;
             order: 3;
         }
         .liquid__wrapper_alessi {
             padding-bottom: 300px;
         }
         &__item_395-396-p22 {
-            flex: 0 0 75%;
+            flex: 0 0 70%;
             order: 4;
         }
         &__item_sesann {
             flex: 0 0 100%;
             order: 5;
         }
-        &__item_potter {
-            flex: 0 0 60%;
-            order: 2;
-        }
         &__item_tabano {
-            flex: 0 0 40%;
+            flex: 0 0 35%;
             order: 1;
+        }
+        &__item_potter {
+            flex: 0 0 65%;
+            order: 2;
         }
         &__item_fiji {
             flex: 0 0 75%;
@@ -164,6 +167,45 @@
         top: 15%;
         left: 15%;
     }
+    .card_fondue {
+        .card__description_fondue {
+            margin-bottom: 18%;
+        }
+        .card__link_fondue {
+            margin-bottom: 25%;
+        }
+    }
+    .card_louis-xx {
+        left: 15%;
+    }
+    .card_395-396-p22 {
+        top: 13%;
+        height: 35%;
+    }
+    .card_sesann {
+        bottom: 8%;
+        .card__title_sesann {
+            flex: 0 0 auto;
+        }
+    }
+    .card_potter {
+        .card__description_potter {
+            margin-bottom: 15%;
+        }
+        .card__link_potter {
+            margin-bottom: 20%;
+        }
+    }
+    .card_fiji {
+        top: 20%;
+        left: 65%;
+        .card__description_fiji {
+            margin-bottom: 20%;
+        }
+        .card__link_fiji {
+            margin-bottom: 30%;
+        }
+    }
     //________________________studio________________________
     .studio {
         &__designers {
@@ -172,7 +214,7 @@
         }
         &__designers-description {
             flex: 0 0 31%;
-            margin: 0 735% 30px 0;
+            margin: 0 50% 30px 0;
         }
         &__designer {
             flex: 0 0 31%;

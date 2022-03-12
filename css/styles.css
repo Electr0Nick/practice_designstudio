@@ -533,6 +533,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   padding-bottom: 6%;
 }
 .studio__title {
@@ -821,6 +822,10 @@ body {
   }
 }
 @media (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+
   .liquid__wrapper_title {
     padding-bottom: 10%;
   }
@@ -848,19 +853,13 @@ body {
     padding: 5%;
   }
 
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .header__right-col {
     display: none;
   }
   .header__left-col {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     height: 400px;
     background-position: 50% 50%;
   }
@@ -898,16 +897,16 @@ body {
   }
   .projects__item_fondue {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 65%;
-            flex: 0 0 65%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
   .projects__item_louis-xx {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -917,8 +916,8 @@ body {
   }
   .projects__item_alessi {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -928,8 +927,8 @@ body {
   }
   .projects__item_395-396-p22 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -942,21 +941,21 @@ body {
         -ms-flex-order: 5;
             order: 5;
   }
-  .projects__item_potter {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 60%;
-            flex: 0 0 60%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   .projects__item_tabano {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .projects__item_potter {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .projects__item_fiji {
     -webkit-box-flex: 0;
@@ -988,6 +987,49 @@ body {
     left: 15%;
   }
 
+  .card_fondue .card__description_fondue {
+    margin-bottom: 18%;
+  }
+  .card_fondue .card__link_fondue {
+    margin-bottom: 25%;
+  }
+
+  .card_louis-xx {
+    left: 15%;
+  }
+
+  .card_395-396-p22 {
+    top: 13%;
+    height: 35%;
+  }
+
+  .card_sesann {
+    bottom: 8%;
+  }
+  .card_sesann .card__title_sesann {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+
+  .card_potter .card__description_potter {
+    margin-bottom: 15%;
+  }
+  .card_potter .card__link_potter {
+    margin-bottom: 20%;
+  }
+
+  .card_fiji {
+    top: 20%;
+    left: 65%;
+  }
+  .card_fiji .card__description_fiji {
+    margin-bottom: 20%;
+  }
+  .card_fiji .card__link_fiji {
+    margin-bottom: 30%;
+  }
+
   .studio__designers {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -997,7 +1039,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 31%;
             flex: 0 0 31%;
-    margin: 0 735% 30px 0;
+    margin: 0 50% 30px 0;
   }
   .studio__designer {
     -webkit-box-flex: 0;
