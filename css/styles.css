@@ -202,6 +202,7 @@ body {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .projects__item_title {
   -webkit-box-flex: 0;
@@ -850,10 +851,32 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    padding: 5%;
+    padding: 5% 5% 0;
   }
 
+  .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header__right-col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .header__btn {
+    position: absolute;
+    right: 2%;
+    top: 110%;
+    width: 50px;
+    margin: 0;
+  }
+  .header__address {
+    display: none;
+  }
+  .header__contacts {
     display: none;
   }
   .header__left-col {
@@ -862,6 +885,9 @@ body {
             flex: 0 0 100%;
     height: 400px;
     background-position: 50% 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .header__logo {
     margin: 7% 0 0 10%;
@@ -890,7 +916,6 @@ body {
   }
   .projects__item {
     height: 300px;
-    background-position: 50% 50%;
   }
   .projects .projects__item_title {
     height: auto;
@@ -916,8 +941,8 @@ body {
   }
   .projects__item_alessi {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -927,8 +952,8 @@ body {
   }
   .projects__item_395-396-p22 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -943,16 +968,18 @@ body {
   }
   .projects__item_tabano {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    background-size: 116%;
+    background-position: 0 30%;
   }
   .projects__item_potter {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 65%;
-            flex: 0 0 65%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -1051,5 +1078,15 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 100px;
+  }
+
+  .footer__info-block {
+    left: 15%;
+  }
+  .footer__logo {
+    right: 15%;
+  }
+  .footer__license {
+    left: 15%;
   }
 }
