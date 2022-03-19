@@ -62,14 +62,14 @@
         &__right-col {
             flex: 0 0 100%;
             order: 1;
+            margin-top: -10%;
         }
         &__btn {
             position: absolute;
             right: 2%;
-            top: 110%;
-            width: 50px;
+            top: 120%;
+            width: 70px;
             margin: 0;
-            // transform: translate(0, -50%);
         }
         &__address {
             display: none;
@@ -88,11 +88,15 @@
         }
     }
     .burger-btn {
-        border-width: 2px;
+        border: 2px solid #7acec3;
         &__line,
         &::before,
         &::after {
             height: 2px;
+            background-color: #7acec3;
+        }
+        &:hover {
+            background-color: rgb(122, 206, 195, 0.2);
         }
     }
     //________________________main________________________
