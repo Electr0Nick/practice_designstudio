@@ -238,3 +238,192 @@
         }
     }
 }
+//________________________________________________________<700px________________________________________________________
+@media (max-width: 700px) {
+    //________________________styles________________________
+    html {
+        font-size: 9px;
+    }
+    .logo-block {
+        width: 20%;
+    }
+    .liquid {
+        &__wrapper_title {
+            padding-bottom: 12%;
+        }
+    }
+    .tablo {
+        flex-direction: column;
+    }
+    //________________________header________________________
+    .header {
+        &__right-col {
+            margin-top: -12%;
+        }
+        &__left-col {
+            background-position: 70% 50%;
+        }
+    }
+    //________________________main________________________
+    .projects {
+        &__item_fondue {
+            flex: 0 0 100%;
+            background-position: 50% 55%;
+        }
+        &__item_louis-xx {
+            flex: 0 0 100%;
+            background-position: 50% 65%;
+        }
+        &__item_alessi {
+            flex: 0 0 100%;
+        }
+        &__item_395-396-p22 {
+            flex: 0 0 100%;
+        }
+        &__item_tabano {
+            flex: 0 0 100%;
+            background-size: 100%;
+            background-position: 50% 20%;
+        }
+        &__item_potter {
+            flex: 0 0 100%;
+            background-position: 70% 50%;
+        }
+        &__item_fiji {
+            flex: 0 0 100%;
+            background-position: 20% 50%;
+        }
+        &__item_timeline {
+            flex: 0 0 100%;
+            height: 120px;
+            margin-bottom: 5%;
+        }
+    }
+    .card {
+        &__title {
+            font-size: 3rem;
+        }
+        &__description {
+            font-size: 1.2rem;
+        }
+        &__link {
+            font-size: 1.8rem;
+        }
+        &__likes {
+            width: 5vw;
+        }
+        &__amount {
+            font-size: 1.2rem;
+        }
+    }
+    .card_fondue {
+        top: 12%;
+        left: 10%;
+        .card__description_fondue {
+            margin-bottom: 15%;
+        }
+        .card__link_fondue {
+            margin-bottom: 15%;
+        }
+    }
+    .card_louis-xx {
+        flex-wrap: wrap;
+        top: 15%;
+        width: 50%;
+        height: 40%;
+        .card__description_louis-xx {
+            margin-bottom: 0;
+        }
+        .card__link_louis-xx {
+            margin-bottom: 10%;
+        }
+    }
+    .card_alessi {
+        top: 15%;
+        right: 10%;
+        left: auto;
+        width: 20%;
+        .card__description_alessi {
+            margin-bottom: 20%;
+        }
+        .card__link_alessi {
+            margin-bottom: 20%;
+        }
+    }
+    .card_395-396-p22 {
+        top: 10%;
+    }
+    .card_sesann {
+        left: 10%;
+        width: 80%;
+    }
+    .card_tabano {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        top: 5%;
+        bottom: auto;
+        left: 6%;
+        width: 80%;
+        .card__description_tabano {
+            margin-bottom: 3%;
+        }
+        .card__link_tabano {
+            margin-bottom: 8%;
+        }
+    }
+    .card_potter {
+        left: 6%;
+        .card__description_potter {
+            margin-bottom: 10%;
+        }
+        .card__link_potter {
+            margin-bottom: 15%;
+        }
+    }
+    .card_fiji {
+        top: 15%;
+        .card__link_fiji {
+            margin-bottom: 20%;
+        }
+    }
+    //________________________studio________________________
+    .studio {
+        &__description {
+            flex: 0 0 auto;
+            margin-bottom: 5%;
+        }
+        &__preview-photo {
+            margin-bottom: 5%;
+        }
+        &__designers-description {
+            flex: 0 0 47%;
+            margin: 0 0 30px 0;
+        }
+        &__designer {
+            flex: 0 0 47%;
+        }
+    }
+    .awards {
+        margin-bottom: 10%;
+        &__title {
+            margin-bottom: 3%;
+        }
+    }
+    //________________________news________________________
+    .block-news {
+        border: 1px solid #000;
+    }
+    //________________________footer________________________
+    .footer {
+        flex-direction: column;
+        &__map {
+            order: 2;
+        }
+        &__info {
+            order: 1;
+        }
+    }
+    .liquid__wrapper_map {
+        padding-bottom: 60%;
+    }
+}

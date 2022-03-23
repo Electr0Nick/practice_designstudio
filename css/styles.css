@@ -96,7 +96,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 69%;
           flex: 0 0 69%;
-  padding: 5% 12% 5% 8%;
+  padding: 3% 12% 3% 8%;
 }
 
 .header {
@@ -712,9 +712,6 @@ body {
           justify-content: space-between;
 }
 .block-news__title {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16%;
-          flex: 0 0 16%;
   font-size: 1.8rem;
 }
 .block-news__date {
@@ -1096,5 +1093,233 @@ body {
   }
   .footer__license {
     left: 15%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+
+  .logo-block {
+    width: 20%;
+  }
+
+  .liquid__wrapper_title {
+    padding-bottom: 12%;
+  }
+
+  .tablo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__right-col {
+    margin-top: -12%;
+  }
+  .header__left-col {
+    background-position: 70% 50%;
+  }
+
+  .projects__item_fondue {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    background-position: 50% 55%;
+  }
+  .projects__item_louis-xx {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    background-position: 50% 65%;
+  }
+  .projects__item_alessi {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .projects__item_395-396-p22 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .projects__item_tabano {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    background-size: 100%;
+    background-position: 50% 20%;
+  }
+  .projects__item_potter {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    background-position: 70% 50%;
+  }
+  .projects__item_fiji {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    background-position: 20% 50%;
+  }
+  .projects__item_timeline {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    height: 120px;
+    margin-bottom: 5%;
+  }
+
+  .card__title {
+    font-size: 3rem;
+  }
+  .card__description {
+    font-size: 1.2rem;
+  }
+  .card__link {
+    font-size: 1.8rem;
+  }
+  .card__likes {
+    width: 5vw;
+  }
+  .card__amount {
+    font-size: 1.2rem;
+  }
+
+  .card_fondue {
+    top: 12%;
+    left: 10%;
+  }
+  .card_fondue .card__description_fondue {
+    margin-bottom: 15%;
+  }
+  .card_fondue .card__link_fondue {
+    margin-bottom: 15%;
+  }
+
+  .card_louis-xx {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    top: 15%;
+    width: 50%;
+    height: 40%;
+  }
+  .card_louis-xx .card__description_louis-xx {
+    margin-bottom: 0;
+  }
+  .card_louis-xx .card__link_louis-xx {
+    margin-bottom: 10%;
+  }
+
+  .card_alessi {
+    top: 15%;
+    right: 10%;
+    left: auto;
+    width: 20%;
+  }
+  .card_alessi .card__description_alessi {
+    margin-bottom: 20%;
+  }
+  .card_alessi .card__link_alessi {
+    margin-bottom: 20%;
+  }
+
+  .card_395-396-p22 {
+    top: 10%;
+  }
+
+  .card_sesann {
+    left: 10%;
+    width: 80%;
+  }
+
+  .card_tabano {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 5%;
+    bottom: auto;
+    left: 6%;
+    width: 80%;
+  }
+  .card_tabano .card__description_tabano {
+    margin-bottom: 3%;
+  }
+  .card_tabano .card__link_tabano {
+    margin-bottom: 8%;
+  }
+
+  .card_potter {
+    left: 6%;
+  }
+  .card_potter .card__description_potter {
+    margin-bottom: 10%;
+  }
+  .card_potter .card__link_potter {
+    margin-bottom: 15%;
+  }
+
+  .card_fiji {
+    top: 15%;
+  }
+  .card_fiji .card__link_fiji {
+    margin-bottom: 20%;
+  }
+
+  .studio__description {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-bottom: 5%;
+  }
+  .studio__preview-photo {
+    margin-bottom: 5%;
+  }
+  .studio__designers-description {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47%;
+            flex: 0 0 47%;
+    margin: 0 0 30px 0;
+  }
+  .studio__designer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47%;
+            flex: 0 0 47%;
+  }
+
+  .awards {
+    margin-bottom: 10%;
+  }
+  .awards__title {
+    margin-bottom: 3%;
+  }
+
+  .block-news {
+    border: 1px solid #000;
+  }
+
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .liquid__wrapper_map {
+    padding-bottom: 60%;
   }
 }
