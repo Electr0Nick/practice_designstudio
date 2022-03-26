@@ -1,0 +1,106 @@
+@media (max-width: 450px) {
+    //________________________styles________________________
+    .title {
+        &__name {
+            font-size: 4rem;
+        }
+    }
+    //________________________header________________________
+    .header {
+        &__right-col {
+            margin-top: -15%;
+        }
+        &__btn {
+            width: 50px;
+        }
+        &__left-col {
+            height: 250px;
+        }
+    }
+    //________________________main________________________
+    .projects {
+        &__item {
+            height: 180px;
+        }
+        .liquid__wrapper_louis-xx {
+            padding-bottom: 180px;
+        }
+        .liquid__wrapper_alessi {
+            padding-bottom: 180px;
+        }
+    }
+    .card {
+        &__title {
+            font-size: 2.5rem;
+        }
+        &__description {
+            display: none;
+        }
+        &__link {
+            font-size: 1.6rem;
+        }
+        &__likes {
+            width: 9vw;
+        }
+    }
+    .card_fondue {
+        top: 15%;
+        left: 10%;
+        .card__link_fondue {
+            margin-bottom: 20%;
+        }
+    }
+    .card_louis-xx {
+        left: 15%;
+        height: 50%;
+    }
+    .card_alessi {
+        top: 10%;
+        width: 35%;
+    }
+    .card_395-396-p22 {
+        left: 45%;
+        height: 60%;
+        .card__title_395-396-p22 {
+            padding-bottom: 8px;
+        }
+    }
+    .card_sesann {
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+    }
+    .card_tabano {
+        top: 15%;
+    }
+    .card_fiji {
+        left: 55%;
+    }
+    //________________________studio________________________
+    .studio {
+        &__designer {
+            width: 80%;
+        }
+    }
+    //________________________news________________________
+    .news {
+        .block-news {
+            &__text {
+                height: 8.5rem;
+            }
+        }
+    }
+    //________________________footer________________________
+    .footer {
+        &__info {
+            min-height: 250px;
+        }
+    }
+}
+//_______________________________________________<350px_______________________________________________
+@media (max-width: 350px) {
+    //________________________styles________________________
+    .logo-block {
+        width: 27%;
+    }
+}

@@ -1,0 +1,224 @@
+@media (max-width: 900px) {
+    //________________________styles________________________
+    html {
+        font-size: 10px;
+    }
+    .liquid {
+        &__wrapper_title {
+            padding-bottom: 10%;
+        }
+    }
+    .title {
+        background-image: none;
+        flex: 0 0 100%;
+        &__name {
+            top: 50%;
+            bottom: auto;
+            right: 2%;
+            left: auto;
+            transform: translate(0, -50%);
+            font-size: 5rem;
+        }
+    }
+    .tablo {
+        flex: 0 0 100%;
+        padding: 5%;
+    }
+    //________________________header________________________
+    .header {
+        flex-wrap: wrap;
+        &__right-col {
+            flex: 0 0 100%;
+            order: 1;
+            margin-top: -10%;
+        }
+        &__btn {
+            position: absolute;
+            right: 2%;
+            top: 120%;
+            width: 70px;
+            margin: 0;
+        }
+        &__address {
+            display: none;
+        }
+        &__contacts {
+            display: none;
+        }
+        &__left-col {
+            flex: 0 0 100%;
+            height: 400px;
+            background-position: 50% 50%;
+            order: 2;
+        }
+        &__logo {
+            margin: 7% 0 0 10%;
+        }
+    }
+    .burger-btn {
+        border: 2px solid #7acec3;
+        &__line,
+        &::before,
+        &::after {
+            height: 2px;
+            background-color: #7acec3;
+        }
+        &:hover {
+            background-color: rgb(122, 206, 195, 0.2);
+        }
+    }
+    //________________________main________________________
+    .projects {
+        flex-direction: column;
+        &__block2 {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item {
+            height: 300px;
+        }
+        .projects__item_title {
+            height: auto;
+        }
+        &__item_fondue {
+            flex: 0 0 60%;
+            order: 1;
+        }
+        &__item_louis-xx {
+            flex: 0 0 40%;
+            order: 2;
+        }
+        .liquid__wrapper_louis-xx {
+            padding-bottom: 300px;
+        }
+        &__item_alessi {
+            flex: 0 0 25%;
+            order: 3;
+        }
+        .liquid__wrapper_alessi {
+            padding-bottom: 300px;
+        }
+        &__item_395-396-p22 {
+            flex: 0 0 75%;
+            order: 4;
+        }
+        &__item_sesann {
+            flex: 0 0 100%;
+            order: 5;
+        }
+        &__item_tabano {
+            flex: 0 0 40%;
+            order: 1;
+            background-size: 116%;
+            background-position: 0 30%;
+        }
+        &__item_potter {
+            flex: 0 0 60%;
+            order: 2;
+        }
+        &__item_fiji {
+            flex: 0 0 75%;
+            order: 3;
+        }
+        &__item_timeline {
+            flex: 0 0 25%;
+            order: 4;
+            background-image: none;
+        }
+    }
+    .filter-block_title {
+        top: 50%;
+        left: 2%;
+        transform: translate(0, -50%);
+    }
+    .filter-block_timeline {
+        top: 15%;
+        left: 15%;
+    }
+    .card_fondue {
+        .card__description_fondue {
+            margin-bottom: 18%;
+        }
+        .card__link_fondue {
+            margin-bottom: 25%;
+        }
+    }
+    .card_louis-xx {
+        left: 15%;
+    }
+    .card_395-396-p22 {
+        top: 13%;
+        height: 35%;
+    }
+    .card_sesann {
+        bottom: 8%;
+        .card__title_sesann {
+            flex: 0 0 auto;
+        }
+    }
+    .card_tabano {
+        bottom: 3%;
+        .card__description_tabano {
+            margin-bottom: 8px;
+        }
+    }
+    .card_potter {
+        .card__description_potter {
+            margin-bottom: 15%;
+        }
+        .card__link_potter {
+            margin-bottom: 20%;
+        }
+    }
+    .card_fiji {
+        top: 20%;
+        left: 65%;
+        .card__description_fiji {
+            margin-bottom: 20%;
+        }
+        .card__link_fiji {
+            margin-bottom: 30%;
+        }
+    }
+    //________________________studio________________________
+    .studio {
+        &__designers {
+            flex-wrap: wrap;
+            padding: 0 5%;
+        }
+        &__designers-description {
+            flex: 0 0 31%;
+            margin: 0 50% 30px 0;
+            font-size: 1.1rem;
+        }
+        &__designer {
+            flex: 0 0 31%;
+        }
+    }
+    .designer {
+        &__profession {
+            margin-bottom: 3%;
+        }
+    }
+    //________________________news________________________
+    .news {
+        flex-direction: column;
+    }
+    .block-news {
+        &__text {
+            font-size: 1.1rem;
+        }
+    }
+    //________________________footer________________________
+    .footer {
+        &__info-block {
+            left: 15%;
+        }
+        &__logo {
+            right: 15%;
+        }
+        &__license {
+            left: 15%;
+        }
+    }
+}

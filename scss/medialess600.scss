@@ -1,0 +1,110 @@
+@media (max-width: 600px) {
+    //________________________styles________________________
+    .liquid {
+        &__wrapper_title {
+            padding-bottom: 15%;
+        }
+    }
+    .logo-block {
+        width: 20%;
+        height: 75%;
+    }
+    //________________________header________________________
+    .header {
+        &__right-col {
+            margin-top: -15%;
+        }
+        &__btn {
+            width: 50px;
+        }
+        &__left-col {
+            height: 300px;
+        }
+    }
+    //________________________main________________________
+    .projects {
+        &__item {
+            height: 250px;
+        }
+        .liquid__wrapper_louis-xx {
+            padding-bottom: 250px;
+        }
+        .liquid__wrapper_alessi {
+            padding-bottom: 250px;
+        }
+        &__item_395-396-p22 {
+            background-size: 116%;
+            background-position: 80% 50%;
+        }
+        &__item_tabano {
+            background-size: 120%;
+            background-position: 0% 12%;
+        }
+    }
+    .card {
+        &__likes {
+            width: 7vw;
+        }
+    }
+    .card_fondue {
+        top: 8%;
+        left: 8%;
+        .card__description_fondue {
+            margin-bottom: 10%;
+        }
+        .card__link_fondue {
+            margin-bottom: 10%;
+        }
+    }
+    .card_louis-xx {
+        top: 10%;
+        left: 10%;
+    }
+    .card_alessi {
+        top: 8%;
+        width: 30%;
+    }
+    .card_395-396-p22 {
+        top: 8%;
+        left: 48%;
+        width: 50%;
+        height: 45%;
+        .card__link_395-396-p22 {
+            margin-left: 10%;
+        }
+    }
+    .card_sesann {
+        left: 2%;
+        width: 96%;
+    }
+    //________________________studio________________________
+    .studio {
+        &__designers {
+            flex-direction: column;
+        }
+        &__designers-description {
+            flex: 0 0 auto;
+        }
+        &__designer {
+            flex: 0 0 auto;
+            width: 70%;
+        }
+    }
+    .designer {
+        &__profession {
+            margin-bottom: 1%;
+        }
+        &__cv {
+            margin-bottom: 10%;
+        }
+    }
+    .designer:nth-child(3) {
+        align-self: flex-end;
+    }
+    //________________________footer________________________
+    .footer {
+        &__info {
+            min-height: 300px;
+        }
+    }
+}

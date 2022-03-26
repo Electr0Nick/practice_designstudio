@@ -6,11 +6,9 @@
     }
 }
 .block-news {
-    display: flex;
     flex: 0 0 48%;
-    flex-direction: column;
-    justify-content: space-between;
     &__title {
+        height: 5rem;
         font-size: 1.8rem;
     }
     &__date {
@@ -20,15 +18,15 @@
         margin: 5% 0;
     }
     &__text {
-        flex: 0 0 18%;
+        height: 6rem;
         color: #6a6969;
         text-transform: none;
     }
     &__link {
-        display: inline-block;
-        align-self: flex-end;
-        width: 50%;
+        display: block;
+        max-width: 6.5rem;
         text-align: right;
+        margin-left: auto;
         color: #fd5000;
         transition: 200ms;
     }

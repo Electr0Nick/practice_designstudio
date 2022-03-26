@@ -96,7 +96,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 69%;
           flex: 0 0 69%;
-  padding: 3% 12% 3% 8%;
+  padding: 4% 12% 4% 8%;
 }
 
 .header {
@@ -697,21 +697,12 @@ body {
 }
 
 .block-news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .block-news__title {
+  height: 5rem;
   font-size: 1.8rem;
 }
 .block-news__date {
@@ -721,18 +712,15 @@ body {
   margin: 5% 0;
 }
 .block-news__text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 18%;
-          flex: 0 0 18%;
+  height: 6rem;
   color: #6a6969;
   text-transform: none;
 }
 .block-news__link {
-  display: inline-block;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 50%;
+  display: block;
+  max-width: 6.5rem;
   text-align: right;
+  margin-left: auto;
   color: #fd5000;
   -webkit-transition: 200ms;
   transition: 200ms;
@@ -765,6 +753,10 @@ body {
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   background-color: #fff;
+}
+.footer iframe {
+  width: 100%;
+  height: 100%;
 }
 .footer__info {
   position: relative;
@@ -819,7 +811,7 @@ body {
 }
 @media (max-width: 1200px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 @media (max-width: 900px) {
@@ -851,7 +843,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    padding: 5% 5% 0;
+    padding: 5%;
   }
 
   .header {
@@ -1044,6 +1036,13 @@ body {
             flex: 0 0 auto;
   }
 
+  .card_tabano {
+    bottom: 3%;
+  }
+  .card_tabano .card__description_tabano {
+    margin-bottom: 8px;
+  }
+
   .card_potter .card__description_potter {
     margin-bottom: 15%;
   }
@@ -1072,6 +1071,7 @@ body {
         -ms-flex: 0 0 31%;
             flex: 0 0 31%;
     margin: 0 50% 30px 0;
+    font-size: 1.1rem;
   }
   .studio__designer {
     -webkit-box-flex: 0;
@@ -1079,10 +1079,19 @@ body {
             flex: 0 0 31%;
   }
 
+  .designer__profession {
+    margin-bottom: 3%;
+  }
+
   .news {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .block-news__text {
+    font-size: 1.1rem;
   }
 
   .footer__info-block {
@@ -1108,6 +1117,10 @@ body {
     padding-bottom: 12%;
   }
 
+  .logo-block_footer {
+    height: 70%;
+  }
+
   .tablo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1119,7 +1132,7 @@ body {
     margin-top: -12%;
   }
   .header__left-col {
-    background-position: 70% 50%;
+    background-position: 60% 50%;
   }
 
   .projects__item_fondue {
@@ -1164,11 +1177,11 @@ body {
     background-position: 20% 50%;
   }
   .projects__item_timeline {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    height: 120px;
-    margin-bottom: 5%;
+    display: none;
+  }
+
+  .filter-block {
+    display: none;
   }
 
   .card__title {
@@ -1216,7 +1229,7 @@ body {
     top: 15%;
     right: 10%;
     left: auto;
-    width: 20%;
+    width: 25%;
   }
   .card_alessi .card__description_alessi {
     margin-bottom: 20%;
@@ -1227,6 +1240,7 @@ body {
 
   .card_395-396-p22 {
     top: 10%;
+    width: 50%;
   }
 
   .card_sesann {
@@ -1275,6 +1289,7 @@ body {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     margin-bottom: 5%;
+    font-size: 1.5rem;
   }
   .studio__preview-photo {
     margin-bottom: 5%;
@@ -1284,6 +1299,7 @@ body {
         -ms-flex: 0 0 47%;
             flex: 0 0 47%;
     margin: 0 0 30px 0;
+    font-size: 1.2rem;
   }
   .studio__designer {
     -webkit-box-flex: 0;
@@ -1296,10 +1312,37 @@ body {
   }
   .awards__title {
     margin-bottom: 3%;
+    font-size: 1.3rem;
+  }
+  .awards__items p {
+    font-size: 1.1rem;
   }
 
-  .block-news {
-    border: 1px solid #000;
+  .designer__name {
+    font-size: 1.3rem;
+  }
+  .designer__profession {
+    font-size: 1.1rem;
+  }
+  .designer__cv {
+    font-size: 1.3rem;
+  }
+
+  .news .block-news {
+    margin-bottom: 8%;
+  }
+  .news .block-news__title {
+    font-size: 2.2rem;
+  }
+  .news .block-news__date {
+    font-size: 1.3rem;
+  }
+  .news .block-news__text {
+    font-size: 1.3rem;
+  }
+  .news .block-news__link {
+    max-width: 8rem;
+    font-size: 1.3rem;
   }
 
   .footer {
@@ -1308,18 +1351,221 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer__map {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   .footer__info {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    min-height: 400px;
+  }
+  .footer__logo {
+    top: 10%;
   }
 
   .liquid__wrapper_map {
     padding-bottom: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .liquid__wrapper_title {
+    padding-bottom: 15%;
+  }
+
+  .logo-block {
+    width: 20%;
+    height: 75%;
+  }
+
+  .header__right-col {
+    margin-top: -15%;
+  }
+  .header__btn {
+    width: 50px;
+  }
+  .header__left-col {
+    height: 300px;
+  }
+
+  .projects__item {
+    height: 250px;
+  }
+  .projects .liquid__wrapper_louis-xx {
+    padding-bottom: 250px;
+  }
+  .projects .liquid__wrapper_alessi {
+    padding-bottom: 250px;
+  }
+  .projects__item_395-396-p22 {
+    background-size: 116%;
+    background-position: 80% 50%;
+  }
+  .projects__item_tabano {
+    background-size: 120%;
+    background-position: 0% 12%;
+  }
+
+  .card__likes {
+    width: 7vw;
+  }
+
+  .card_fondue {
+    top: 8%;
+    left: 8%;
+  }
+  .card_fondue .card__description_fondue {
+    margin-bottom: 10%;
+  }
+  .card_fondue .card__link_fondue {
+    margin-bottom: 10%;
+  }
+
+  .card_louis-xx {
+    top: 10%;
+    left: 10%;
+  }
+
+  .card_alessi {
+    top: 8%;
+    width: 30%;
+  }
+
+  .card_395-396-p22 {
+    top: 8%;
+    left: 48%;
+    width: 50%;
+    height: 45%;
+  }
+  .card_395-396-p22 .card__link_395-396-p22 {
+    margin-left: 10%;
+  }
+
+  .card_sesann {
+    left: 2%;
+    width: 96%;
+  }
+
+  .studio__designers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .studio__designers-description {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .studio__designer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 70%;
+  }
+
+  .designer__profession {
+    margin-bottom: 1%;
+  }
+  .designer__cv {
+    margin-bottom: 10%;
+  }
+
+  .designer:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  .footer__info {
+    min-height: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .title__name {
+    font-size: 4rem;
+  }
+
+  .header__right-col {
+    margin-top: -15%;
+  }
+  .header__btn {
+    width: 50px;
+  }
+  .header__left-col {
+    height: 250px;
+  }
+
+  .projects__item {
+    height: 180px;
+  }
+  .projects .liquid__wrapper_louis-xx {
+    padding-bottom: 180px;
+  }
+  .projects .liquid__wrapper_alessi {
+    padding-bottom: 180px;
+  }
+
+  .card__title {
+    font-size: 2.5rem;
+  }
+  .card__description {
+    display: none;
+  }
+  .card__link {
+    font-size: 1.6rem;
+  }
+  .card__likes {
+    width: 9vw;
+  }
+
+  .card_fondue {
+    top: 15%;
+    left: 10%;
+  }
+  .card_fondue .card__link_fondue {
+    margin-bottom: 20%;
+  }
+
+  .card_louis-xx {
+    left: 15%;
+    height: 50%;
+  }
+
+  .card_alessi {
+    top: 10%;
+    width: 35%;
+  }
+
+  .card_395-396-p22 {
+    left: 45%;
+    height: 60%;
+  }
+  .card_395-396-p22 .card__title_395-396-p22 {
+    padding-bottom: 8px;
+  }
+
+  .card_sesann {
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+  }
+
+  .card_tabano {
+    top: 15%;
+  }
+
+  .card_fiji {
+    left: 55%;
+  }
+
+  .studio__designer {
+    width: 80%;
+  }
+
+  .news .block-news__text {
+    height: 8.5rem;
+  }
+
+  .footer__info {
+    min-height: 250px;
+  }
+}
+@media (max-width: 350px) {
+  .logo-block {
+    width: 27%;
   }
 }
